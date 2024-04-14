@@ -2,18 +2,18 @@ package com.example.demo.dtos;
 
 public class EmailDTO {
 
-    private String nome;
+    private String name;
     private String email;
-    private String mensagem;
+    private String message;
 
     public EmailDTO() {
     }
     public String getNome() {
-        return nome;
+        return name;
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        this.name = nome;
     }
 
     public String getEmail() {
@@ -25,10 +25,10 @@ public class EmailDTO {
     }
 
     public String getMensagem() {
-        return mensagem;
+        return message;
     }
 
     public void setMensagem(String mensagem) {
-        this.mensagem = mensagem;
+        this.message = mensagem;
     }
 }
