@@ -21,9 +21,9 @@ public class EmailController {
     public String sendEmail(@RequestBody EmailDTO emailDTO) {
         try {
             SimpleMailMessage mensagem = new SimpleMailMessage();
-            mensagem.setTo("joaovitordasilvapimentel0@gmail.com");
-            mensagem.setSubject("Novo Email de " + emailDTO.getNome());
-            mensagem.setText(emailDTO.getMensagem());
+            mensagem.setTo(emailDTO.getEmail());
+            mensagem.setSubject("Novo Email de " + emailDTO.getName());
+            mensagem.setText(emailDTO.getMessage());
 
             javaMailSender.send(mensagem);
 

@@ -8,12 +8,13 @@ public class EmailDTO {
 
     public EmailDTO() {
     }
-    public String getNome() {
+
+    public String getName() {
         return name;
     }
 
-    public void setNome(String nome) {
-        this.name = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getEmail() {
@@ -24,11 +25,11 @@ public class EmailDTO {
         this.email = email;
     }
 
-    public String getMensagem() {
+    public String getMessage() {
         return message;
     }
 
-    public void setMensagem(String mensagem) {
-        this.message = mensagem;
+    public void setMessage(String message) {
+        this.message = message;
     }
 }
